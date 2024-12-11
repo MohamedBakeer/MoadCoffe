@@ -1,0 +1,168 @@
+/* ------------------Genrall Setting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "LBC";
+    font-style: normal;
+    transition: 0.3s all;
+    scroll-behavior: smooth;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  body {
+display: flex;
+flex-direction: column;
+    position: relative;
+    height: 110vh;
+    align-items: center;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+  header{
+    /* background-color: #F9DC8B; */
+    /* background: linear-gradient(180deg, #111 0%, #111 100%); */
+    color: #fff;
+    width: 100%;
+    height: 10vh;
+    /* border: red 1px solid; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* display: none; */
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 1.7%;
+  }
+
+  header > i{
+    /* background-color: #fff; */
+    color: #EB8169;
+    border: 1px solid #EB8169;
+    border-radius: 10px;
+    padding: 10px 25px;
+    /* margin: 10px; */
+    font-size: 130%;
+    /* width: 100px; */
+    /* height: 100%; */
+    /* font-weight: 700; */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header > i:hover{
+    background-color: #EB8169;
+    color: #fff;
+  }
+
+  header .nav{
+    
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* border: 1px solid blue; */
+    /* position: absolute; */
+    top: 100px;
+    /* background-color: #fff; */
+    /* margin: 10px; */
+    /* padding: 10px; */
+    /* width: 75%; */
+    height: 100%;
+  }
+
+  header .nav > a{
+    filter: drop-shadow(0px 0px 1px #fff);
+    word-spacing: 5px;
+    border-radius: 10px;
+    font-size: 95%;
+    font-weight: 500;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EB8169;
+    border: 1px solid #EB8169;
+  }
+  header .nav > a:hover{
+    background-color: #EB8169;
+    color: #fff;
+  }
+
+  main{
+    
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px; */
+    /* background-color: #fff; */
+    /* border: 1px solid blue; */
+    /* padding: 10px; */
+  }  
+  main .flow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px; */
+    background-color: transparent;
+    /* border: 1px solid red; */
+    
+    filter: drop-shadow(0px 0px 2px #EB8169);
+  }
+
+  main .flow > img{
+    height: 45vh;
+  }
+
+  main .flow > h1{
+    font-size: 200%;
+    font-weight: 700;
+    word-spacing: 25px;
+    color: #EB8169;
+    margin-top: 10px;
+  }
+
+  main .background{
+    width: 100%;
+    height: 100%;
+    /* background-color: #111; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+  }
+  main .background > video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(7px) brightness(0.7) contrast(1.7);
+    
+  } 
+  
+  footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* background-color: green; */
+    width: 100%;
+    height: 10vh;
+  }

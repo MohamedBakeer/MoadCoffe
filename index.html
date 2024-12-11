@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+    <title>Document</title>
+  </head>
+  <body dir="rtl">
+    <header>
+        <i class="fa-solid fa-bars"></i>
+        <div class="nav">
+            <!-- <a href="#">الرئيسية</a>
+            <a href="#">الأصناف</a>
+            <a href="#">الأحداث</a>
+            <a href="#">قصتنا</a>
+            <a href="#">الفروع</a>
+            <a href="#">نواصل معنا</a> -->
+
+            <a href="#">اكتشف عالمنا</a>
+            <a href="#">تشكيلة الأصناف</a>
+            <a href="#">آخر الأحداث</a>
+            <a href="#">قصتنا الملهمة</a>
+            <a href="#">فروعنا حولك</a>
+            <a href="#">تواصل معنا اليوم</a>
+        </div>
+    </header>
+    <main>
+      <div class="background">
+        <video id="video_intro" src="video/videoplayback.mp4"   ></video>
+      </div>
+      <div class="flow">
+        <img src="image/logo.png" alt="" />
+        <h1> يُحكَى أَنّ مذاقاً يَحكي </h1>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script>
+      var video_intro = document.querySelector('#video_intro');
+      video_intro.play();
+      video_intro.loop = true ; 
+    </script>
+  </body>
+</html>
