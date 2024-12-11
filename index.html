@@ -29,7 +29,7 @@
     </header>
     <main>
       <div class="background">
-        <video id="video_intro" src="video/videoplayback.mp4"  autoplay loop  ></video>
+        <video id="video_intro" src="video/videoplayback.mp4" ></video>
       </div>
       <div class="flow">
         <img src="image/logo.png" alt="" />
@@ -44,16 +44,18 @@
       // video_intro.play();
       // video_intro.loop = true ; 
 
-      var id = setInterval(frame, 1500);
-
-      function frame() {
-        
-          // clearInterval(id);
-          // console.log(id);
-          video_intro.play();
-        
+      // var id = setInterval(frame, 1500);
+      var i = 0 ;
+      function loper() {
+        video_intro.play();
+        video_intro.loop = true ; 
+        // console.log('loper = ' + i);
+        // console.log('loper = ' + video_intro.play());
+        // console.log('loper = ' + video_intro.loop);
+        // i++;
       }
 
+      setInterval(loper, 100.15);
     </script>
   </body>
 </html>
