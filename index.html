@@ -44,12 +44,15 @@
       // video_intro.play();
       // video_intro.loop = true ; 
 
-      // var id = setInterval(frame, 0.000001);
-      setInterval(() => {
-        console.log("setInterval");
-        video_intro.play();
-      }, 1);
-      
+      var id = setInterval(frame, 500);
+
+      function frame() {
+        
+          // clearInterval(id);
+          console.log(id);
+          
+        
+      }
 
     </script>
   </body>
