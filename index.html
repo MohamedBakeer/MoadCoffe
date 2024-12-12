@@ -10,7 +10,9 @@
   </head>
   <body dir="rtl">
     <header>
+      <div class="btn">
         <i id="btn_menu" class="fa-solid fa-bars"></i>
+      </div>
         <div class="nav">
             <!-- <a href="#">الرئيسية</a>
             <a href="#">الأصناف</a>
@@ -28,6 +30,7 @@
         </div>
     </header>
     <main>
+      <section>
       <div class="background">
         <video id="video_intro" src="video/videoplayback.mp4" autoplay loop></video>
       </div>
@@ -35,27 +38,24 @@
         <img src="image/logo.png" alt="" />
         <h1> يُحكَى أَنّ مذاقاً يَحكي </h1>
       </div>
+    </section>
     </main>
 
     <footer></footer>
 
     <script>
       var video_intro = document.querySelector('#video_intro');
-      // video_intro.play();
-      // video_intro.loop = true ; 
 
-      // var id = setInterval(frame, 1500);
-      var i = 0 ;
       function play_intro() {
         video_intro.play();
         video_intro.loop = true ; 
-        // console.log('loper = ' + i);
+        // console.log('loper = ');
         // console.log('loper = ' + video_intro.play());
         // console.log('loper = ' + video_intro.loop);
         // i++;
       }
 
-      // setInterval(loper, 100.15);
+      setInterval(play_intro, 100);
     </script>
   </body>
 </html>

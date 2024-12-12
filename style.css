@@ -45,7 +45,7 @@ flex-direction: column;
     padding: 10px 1.7%;
   }
 
-  header > i{
+  header > .btn{
     /* background-color: #fff; */
     color: #EB8169;
     border: 1px solid #EB8169;
@@ -62,25 +62,26 @@ flex-direction: column;
     align-items: center;
   }
 
-  header > i:hover{
+  header > .btn:hover{
     background-color: #EB8169;
     color: #fff;
-    
   }
 
   header .nav{
     
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     /* border: 1px solid blue; */
-    /* position: absolute; */
+    position: absolute;
     top: 100px;
+    right: 1.7%;
     /* background-color: #fff; */
     /* margin: 10px; */
     /* padding: 10px; */
-    /* width: 75%; */
-    height: 100%;
+    width: 20%;
+    /* height: 100%; */
   }
   
   header .nav > a{
@@ -94,10 +95,11 @@ flex-direction: column;
     padding: 10px 20px;
     cursor: pointer;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     color: #EB8169;
     border: 1px solid #EB8169;
+    width: 100%;
   }
   header .nav > a:hover{
     background-color: #EB8169;
@@ -105,7 +107,19 @@ flex-direction: column;
   }
 
   main{
-    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px; */
+    /* background-color: #fff; */
+    border: 1px solid blue;
+    /* padding: 10px; */
+  }  
+
+  main > section{
     top: 0;
     width: 100%;
     height: 100vh;
@@ -115,9 +129,9 @@ flex-direction: column;
     align-items: center;
     /* margin: 10px; */
     /* background-color: #fff; */
-    /* border: 1px solid blue; */
+    
     /* padding: 10px; */
-  }  
+  }
   main .flow{
     position: absolute;
     width: 100%;
@@ -159,7 +173,7 @@ flex-direction: column;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: blur(10px) brightness(0.8) contrast(1.5);
+    filter: blur(10px) brightness(0.5) contrast(1.5);
     
   } 
   
