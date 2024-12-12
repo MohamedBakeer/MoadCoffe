@@ -20,7 +20,7 @@
 display: flex;
 flex-direction: column;
     position: relative;
-    height: 110vh;
+    /* height: 110vh; */
     align-items: center;
 }
 ::-webkit-scrollbar {
@@ -46,16 +46,12 @@ flex-direction: column;
   }
 
   header > .btn{
-    /* background-color: #fff; */
+    filter: drop-shadow(0px 0px 1px #fff);
     color: #EB8169;
     border: 1px solid #EB8169;
     border-radius: 10px;
     padding: 10px 25px;
-    /* margin: 10px; */
     font-size: 130%;
-    /* width: 100px; */
-    /* height: 100%; */
-    /* font-weight: 700; */
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -108,34 +104,50 @@ flex-direction: column;
 
   main{
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin: 10px; */
-    /* background-color: #fff; */
-    border: 1px solid blue;
-    /* padding: 10px; */
+    position: absolute;
+    top: 0;
+    right: 0;
   }  
 
-  main > section{
-    top: 0;
+  main .home_page{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin: 10px; */
-    /* background-color: #fff; */
-    
+    /* margin: 10px 0px; */
+    /* background-color: #111; */
     /* padding: 10px; */
   }
-  main .flow{
-    position: absolute;
+
+  main section{
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    background-color: red;
+    /* padding: 10px; */
+  }
+
+  main .flow_video{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px 0px; */
+    /* background-color: #111; */
+    /* padding: 10px; */
+  }
+
+  main .flow_video .flow{
+    position: absolute;
+    /* width: 100%; */
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,22 +156,23 @@ flex-direction: column;
     background-color: transparent;
     /* border: 1px solid red; */
     
-    filter: drop-shadow(0px 0px 22px #EB8169);
+    filter: drop-shadow(0px 0px 20px #EB8169);
   }
 
-  main .flow > img{
-    height: 45vh;
+  main .flow_video .flow > img{
+    /* height: 1%; */
+    width: 45%;
   }
 
-  main .flow > h1{
-    font-size: 200%;
+  main  .flow_video .flow > h1{
+    font-size: 180%;
     font-weight: 700;
     word-spacing: 25px;
     color: #EB8169;
     margin-top: 10px;
   }
 
-  main .background{
+  main .flow_video .background{
     width: 100%;
     height: 100%;
     /* background-color: #111; */
@@ -169,7 +182,7 @@ flex-direction: column;
     align-items: center;
     background-color: #111;
   }
-  main .background > video{
+  main .flow_video .background > video{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -182,6 +195,6 @@ flex-direction: column;
     bottom: 0;
     right: 0;
     /* background-color: green; */
-    width: 100%;
-    height: 10vh;
+    /* width: 100%; */
+    /* height: 10vh; */
   }
