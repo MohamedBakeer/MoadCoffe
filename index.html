@@ -16,8 +16,8 @@
   </head>
   <body dir="rtl">
     <header>
-      <div class="btn">
-        <i id="btn_menu" class="fa-solid fa-bars"></i>
+      <div class="btn" onclick="menuBar()">
+        <i class="fa-solid fa-caret-down"></i>
       </div>
       <div class="nav">
         <!-- <a href="#">الرئيسية</a>
@@ -57,18 +57,29 @@
     <footer></footer>
 
     <script>
-      var video_intro = document.querySelector("#video_intro");
+      
+      function menuBar() {
+          if (document.querySelector("Header > .nav").style.right == "1.7%") {
+            document.querySelector("Header > .nav").style.right = "-100%";
+            document.querySelector("header > .btn > i").style.transform = "rotate(-90deg)";
+          }else{
+            document.querySelector("Header > .nav").style.right = "1.7%";
+            document.querySelector("header > .btn > i").style.transform = "rotate(0deg)";
+          }
+        }
 
-      function play_intro() {
-        video_intro.play();
-        video_intro.loop = true;
-        // console.log('loper = ');
-        // console.log('loper = ' + video_intro.play());
-        // console.log('loper = ' + video_intro.loop);
-        // i++;
+      if (document.querySelector(".home_page")) {
+        var video_intro = document.querySelector("#video_intro");
+
+        function play_intro() {
+          video_intro.play();
+          video_intro.loop = true;
+          // console.log('loper = ');
+        }
+        // setInterval(play_intro(), 100);
+
+        
       }
-
-      setInterval(play_intro, 100);
     </script>
   </body>
 </html>
