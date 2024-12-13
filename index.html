@@ -51,6 +51,14 @@
             <h1>يُحكَى أَنّ مذاقاً يَحكي</h1>
           </div>
         </section>
+
+        <section class="card_bean">
+
+        </section>
+
+        <section class="">
+
+        </section>
       </div>
     </main>
 
@@ -62,9 +70,15 @@
           if (document.querySelector("Header > .nav").style.right == "1.7%") {
             document.querySelector("Header > .nav").style.right = "-100%";
             document.querySelector("header > .btn > i").style.transform = "rotate(-90deg)";
+
+            document.querySelector("header > .btn").style.color = "#EB8169";
+            document.querySelector("header > .btn").style.backgroundColor = "transparent";
           }else{
             document.querySelector("Header > .nav").style.right = "1.7%";
             document.querySelector("header > .btn > i").style.transform = "rotate(0deg)";
+
+            document.querySelector("header > .btn").style.color = "#fff";
+            document.querySelector("header > .btn").style.backgroundColor = "#EB8169";
           }
         }
 
