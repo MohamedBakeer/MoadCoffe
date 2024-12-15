@@ -53,8 +53,38 @@
         </section>
 
         <section class="about_us">
-          <div class="head_text"><h1>قصـتنا الملهمة</h1></div>
-          <div class="sliderText"></div>
+          <!-- <div class="head_text"><h1>قصـتنا الملهمة</h1></div> -->
+
+          <div class="image">
+            <img src="image/Photo_face/this.jpg" alt="" />
+          </div>
+          <div class="text">
+            <h1>قصـتنا الملهمة</h1>
+            <span>
+              في عام 2019، كان حلم بُن معاذ يُعانق سماء الإبداع، حيث بدأنا
+              رحلتنا في عالم القهوة بنكهةٍ خاصة، ليكون افتتاحنا الرسمي في 18
+              ديسمبر 2019 نقطة انطلاق لحكاية نجاح ممتدة. ولكن قبل هذا التاريخ
+              بعام، كان لدينا الشغف العميق في دراسة الجدوى وابتكار أفضل الخلطات،
+              مما أتاح لنا وقتاً طويلاً لاكتشاف 7 أصناف فريدة من حبوب البن، كل
+              واحدة منها تحمل طابعاً ومذاقاً يختلف عن الأخرى.
+            </span>
+            <span>
+              بُن معاذ ليس مجرد مطحن قهوة؛ بل هو تجربة تستحق أن تُحكى. فكل حبة
+              قهوة نستخدمها تحمل قصة في كل رشفة، وكل نوع من أصنافنا يأتي بتفاصيل
+              دقيقة: من درجة التحميص، إلى القوة والمذاق، وصولاً إلى اللون المميز
+              الذي يروي طعم التاريخ والتراث. كان اختيار هذه الأصناف هو ثمرة
+              لسنوات من التجربة، وجاءت بعد العديد من المحاولات والخلطات المختلفة
+              التي تضمن لكل فئة من عشاق القهوة مذاقاً يناسب ذائقتهم.
+            </span>
+
+            <span
+              >شعارنا، "بُن معاذ يُحكي أن مذاقاً يَحكي"، هو انعكاس لروحنا التي
+              تسعى إلى نقل الأذواق والأحاسيس عبر حبوب البن المختارة بعناية. إننا
+              لا نبحث فقط عن القهوة التي تروي عطشك، بل عن تلك التي تروي لك قصة،
+              وتدعو لذكريات لا تُنسى، وكل فرع من فروعنا، بدءاً من الفرع الرئيسي
+              وحتى الفروع التالية، يشهد على هذا العشق المتجدد للقهوة.
+            </span>
+          </div>
         </section>
 
         <section class="">
@@ -66,22 +96,25 @@
     <footer></footer>
 
     <script>
-      
       function menuBar() {
-          if (document.querySelector("Header > .nav").style.right == "1.7%") {
-            document.querySelector("Header > .nav").style.right = "-100%";
-            document.querySelector("header > .btn > i").style.transform = "rotate(-90deg)";
+        if (document.querySelector("Header > .nav").style.right == "1.7%") {
+          document.querySelector("Header > .nav").style.right = "-100%";
+          document.querySelector("header > .btn > i").style.transform =
+            "rotate(-90deg)";
 
-            document.querySelector("header > .btn").style.color = "#EB8169";
-            document.querySelector("header > .btn").style.backgroundColor = "transparent";
-          }else{
-            document.querySelector("Header > .nav").style.right = "1.7%";
-            document.querySelector("header > .btn > i").style.transform = "rotate(0deg)";
+          document.querySelector("header > .btn").style.color = "#EB8169";
+          document.querySelector("header > .btn").style.backgroundColor =
+            "transparent";
+        } else {
+          document.querySelector("Header > .nav").style.right = "1.7%";
+          document.querySelector("header > .btn > i").style.transform =
+            "rotate(0deg)";
 
-            document.querySelector("header > .btn").style.color = "#fff";
-            document.querySelector("header > .btn").style.backgroundColor = "#EB8169";
-          }
+          document.querySelector("header > .btn").style.color = "#fff";
+          document.querySelector("header > .btn").style.backgroundColor =
+            "#EB8169";
         }
+      }
 
       if (document.querySelector(".home_page")) {
         var video_intro = document.querySelector("#video_intro");
@@ -92,9 +125,34 @@
           // console.log('loper = ');
         }
         // setInterval(play_intro(), 100);
-
-        
       }
+
+      let i = 0;
+      // setInterval(() => {
+
+      //   if (i <= 0) {
+      //     i=i-1;
+      //   }
+
+      //   console.log(i);
+      //   // document.querySelector('.home_page .about_us .slider > div .image img').style.objectPosition = `${i}px 0px`;
+      //   document.querySelector('.home_page .about_us .slider > div .image img').style.objectPosition = `0px ${i}px`;
+      //   console.log(document.querySelector('.home_page .about_us .slider > div .image img').style.objectPosition);
+      // }, 10);
+
+      window.addEventListener("scroll", () => {
+        // if (window.pageYOffset > 100) {
+        //     totop.classList.add("active")
+        // }else{
+        //     totop.classList.remove("active")
+        // }
+        console.log(window.scrollY);
+        if (window.scrollY >= 150) {
+          document.querySelector(".home_page .about_us").style.opacity = 1;
+        }else{
+          document.querySelector(".home_page .about_us").style.opacity = 0;
+        }
+      });
     </script>
   </body>
 </html>
