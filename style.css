@@ -319,79 +319,95 @@ main .home_page {
 .home_page .cardofBean .cards {
   /* border: 1px solid green; */
   width: 100%;
-  height: 100%;
+  height: 80%;
   display: grid;
-  grid-template-columns: repeat(4, 20%);
-  grid-template-rows: repeat(2, 50%);
+  /* grid-template-rows: repeat(2, 50%); */
+  grid-template-columns: repeat(auto-fit, minmax(400px, 10%));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 0.5fr));
   justify-content: center;
   align-items: center;
-  grid-column-gap: 50px;
-  /* grid-row-gap: 20px; */
+  grid-column-gap: 2%;
+  grid-row-gap: 5%;
   /* margin: 10px; */
-  /* padding: 10px;  */
+  padding: 10px; 
 }
 
 .home_page .cardofBean .cards .card {
   background: linear-gradient(145deg, #e0e0e0, #f5f5f5);
   border-radius: 15px;
   width: 400px;
-  /* height: 300px; */
+  height: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transform: scale(1);
   transition: transform 0.3s ease;
+  /* border: 1px solid red; */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .home_page .cardofBean .cards .card:hover {
   transform: scale(1.05);
 }
 
-/* Header */
-.home_page .cardofBean .cards .card-header {
+.home_page .cardofBean .cards .card-header{
   background-color: #eb8169;
-  padding: 15px;
-  text-align: center;
-  color: white;
-}
-
-.home_page .cardofBean .cards .card-title {
-  margin: 0;
-  font-size: 24px;
+  border-radius: 15px;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 100%;
+  padding: 5px;
   font-weight: bold;
 }
 
-/* Body */
-.home_page .cardofBean .cards .card-body {
-  padding: 15px;
+.home_page .cardofBean .cards .card-body{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction : column ;
+  justify-content: center ;
+  align-items    : center ;
+  /* border: 1px solid red; */
+  /* padding: 10px; */
+  text-align: center;
 }
 
-.home_page .cardofBean .cards .card-details {
-  margin-bottom: 15px;
+/* Body */
+.card-body {
+  padding: 20px;
+}
+
+.card-details {
+  margin-bottom: 20px;
 }
 
 .card-details h2 {
-  text-align: center;
   font-size: 18px;
   color: #333;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
-.home_page .cardofBean .cards .card-details p {
-  text-align: center;
+.card-details p {
   font-size: 14px;
   color: #666;
 }
 
-.home_page .cardofBean .cards .taste,
-.home_page .cardofBean .cards .color {
+.taste,
+.color {
   margin-bottom: 15px;
 }
 
-.home_page .cardofBean .cards .card-details strong {
+.card-details strong {
   /* color: #4CAF50; */
   color: #eb8169;
 }
-
 
 footer {
   position: absolute;
