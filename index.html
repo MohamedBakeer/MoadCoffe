@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    
     <link rel="shortcut icon" href="image/logo.png" type="image/x-icon" />
     <title>Document</title>
   </head>
@@ -35,6 +36,7 @@
         <a href="#">تواصل معنا اليوم</a>
       </div>
     </header>
+    
     <main>
       <div class="home_page">
         <section class="flow_video">
@@ -109,7 +111,7 @@
                   </div>
                   <div class="color">
                     <h2>اللون: <strong>متوسط</strong></h2>
-                    <p>لون قهوتنا يجسد التوازن المثالي بين القوة والنعومة.</p>
+                    <p>لون قهوتنا يجسد التوازن المثالي بين القوة و الخفة.</p>
                   </div>
                 </div>
               </div>
@@ -143,11 +145,11 @@
                 <div class="card-details">
                   <div class="taste">
                     <h2>الطعم: <strong>قوي</strong></h2>
-                    <p>تمتع بتجربة طعم قوي وغني، مع لمسة من الحلاوة تميزها عن باقي أنواع القهوة.</p>
+                    <p>تمتع بتجربة طعم قوي وغني، مع نكهة مميزة تميزها عن باقي أنواع القهوة.</p>
                   </div>
                   <div class="color">
                     <h2>اللون: <strong>متوسط</strong></h2>
-                    <p>لون قهوتنا المعتدل يجمع بين القوة والنعومة، مما يجعلها البديل المثالي للقهوة الداكنة.</p>
+                    <p>لون قهوتنا المعتدل يجعلها البديل المثالي للقهوة الداكنة.</p>
                   </div>
                 </div>
               </div>
@@ -255,9 +257,39 @@
       </div>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="top">
+        <div class="linkss">
+          
+            <a href="" onmouseover="changetxt('صفحتنا الرسمية' , 1)" onmouseout="redotxt('بُن مُعاذ' , 1)" ><i class="fa-brands fa-facebook"></i> <span>بُن مُعاذ</span></a>
+            <a href="" onmouseover="changetxt('دير متابعة 🙂' , 2)" onmouseout="redotxt('mouath_coffee' , 2)" ><i class="fa-brands fa-instagram"></i> <span>mouath_coffee</span></a>
+            <a href="" onmouseover="changetxt('كلمنا وتس' , 3)" onmouseout="redotxt('الوتس آب' , 3)" ><i class="fa-brands fa-whatsapp"></i><span>الوتس آب</span> </a>
+            <!-- <a href=""><i class="fa-solid fa-phone"></i> <span>094-2699914</span></a> -->
+            <!-- <a href=""><i class="fa-solid fa-phone"></i> <span>093-1002891</span></a> -->
+          
+        </div>
+        <div class="logo">
+          <img src="image/logo.png" alt="">
+          <div class="text"><span>يُحكَى أَنّ مذاقاً يَحكي</span></div>
+        </div>
+        <div class="supr"></div>
+      </div>
+      <div class="bottom">
+        <p>Created By  <a href="https://www.facebook.com/mohamed.bakeer.1884" target="_blank">Mohamed Bakeer</a>| © 2021-2022 All rights reserved</p>
+      </div>
+    </footer>
 
     <script>
+      function changetxt(newtxt , child) {
+        let txt = document.querySelector(`body > footer > div.top > div.linkss > a:nth-child(${child}) > span`);
+        txt.innerHTML = newtxt;
+      }
+
+      function redotxt(newtxt , child) {
+        let txt = document.querySelector(`body > footer > div.top > div.linkss > a:nth-child(${child}) > span`);
+        txt.innerHTML = newtxt;
+      }
+
       function menuBar() {
         if (document.querySelector("Header > .nav").style.right == "1.7%") {
           document.querySelector("Header > .nav").style.right = "-100%";
