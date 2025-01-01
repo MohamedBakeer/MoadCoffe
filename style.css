@@ -419,7 +419,7 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 20px;
+  /* padding: 20px 20px 0px 20px; */
   box-shadow: 0px 0px 25px 0px rgb(0, 0, 0);
 }
 
@@ -498,7 +498,7 @@ footer  .top .linkss a:hover i{
 footer  .top .linkss a:hover span{
   transition: .2s all ease-in-out;
   color: #fff;
-  transform: ;
+  
 }
 
 footer  .top .logo{
@@ -526,12 +526,75 @@ footer  .top .logo .text{
   font-weight: 700;
 
 }
+
+footer  .top .qrcode_wts{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+
+footer  .top .qrcode_wts img{
+  /* width: 100%; */
+  height: 70%;
+  /* border: 1px solid red; */
+}
+footer  .top .qrcode_wts .text{
+  width: 100%;
+  /* height: 70%; */
+  /* border: 1px solid red; */
+  text-align: center;
+  color: #eb8169;
+  font-size: 150%;
+  font-weight: 700;
+}
 footer .bottom{
   width: 100%;
   /* height: 20%; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   /* border: 1px solid red; */
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 20px 1px #000000b0;
+  /* margin: 10px; */
+  /* border-radius: 25px; */
+  background-color: rgba(0, 0, 0, 0.205);
+
   
+}
+
+footer .bottom p{
+  color: #eb8169;
+  font-size: 100%;
+  font-weight: 500;
+}
+footer .bottom a{
+  color: #eb8169;
+  font-size: 100%;
+  font-weight: 500;
+  padding: 0 5px;
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+
+/* nest hub */
+@media only screen and (max-width: 1200px) {
+ header .nav {
+  top: 60px;
+  width: 30%;
+}
+
+header .nav > a {
+  filter: drop-shadow(0px 0px 0.7px #fff);
+  word-spacing: 2px;
+  font-weight: 400;
+  margin:6px;
+  padding: 7px 20px;
+}
 }

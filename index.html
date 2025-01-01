@@ -272,14 +272,21 @@
           <img src="image/logo.png" alt="">
           <div class="text"><span>يُحكَى أَنّ مذاقاً يَحكي</span></div>
         </div>
-        <div class="supr"></div>
+        <div class="qrcode_wts">
+          <img src="image/qr-code-removebg-preview.png" alt="">
+          <div class="text"><span>ملاحظاتك</span></div>
+        </div>
       </div>
       <div class="bottom">
-        <p>Created By  <a href="https://www.facebook.com/mohamed.bakeer.1884" target="_blank">Mohamed Bakeer</a>| © 2021-2022 All rights reserved</p>
+        <p>Created By  <a href="https://www.facebook.com/mohamed.bakeer.1884" target="_blank">MNB</a>| © 2019-<span>2022</span> All rights reserved</p>
       </div>
     </footer>
 
     <script>
+      // reload year to 2019 - 20**
+      let year = new Date().getFullYear();
+      document.querySelector("footer > div.bottom > p > span").innerHTML = year;
+
       function changetxt(newtxt , child) {
         let txt = document.querySelector(`body > footer > div.top > div.linkss > a:nth-child(${child}) > span`);
         txt.innerHTML = newtxt;
