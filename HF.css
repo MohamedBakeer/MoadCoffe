@@ -314,6 +314,211 @@ footer .bottom a {
 
 /* 📱 الهواتف المتوسطة والصغيرة (مثل iPhone 11, Galaxy S20) */
 @media (max-width: 600px) {
+  header {
+    padding: 10px 3.5%;
+  }
+
+  header > .btn {
+    filter: drop-shadow(0px 0px 1px #fff);
+    color: #eb8169;
+    border: 1px solid #eb8169;
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header > .btn > i {
+    transform: rotate(-90deg);
+  }
+  header > .btn:hover {
+    background-color: #eb8169;
+    color: #fff;
+  }
+
+  header .nav {
+    position: absolute;
+    top: 70px;
+    width: 96vw;
+  }
+  header .nav > a {
+    filter: drop-shadow(0px 0px 1px #fff);
+    word-spacing: 5px;
+    border-radius: 10px;
+    font-size: 120%;
+    font-weight: 500;
+    margin: 7px;
+    padding: 5px 25px;
+  }
+
+  /* ----------------------------------------  */
+  footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding: 20px 20px 0px 20px; */
+    box-shadow: 0px 0px 25px 0px rgb(0, 0, 0);
+  }
+
+  footer .top {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  footer .top > div {
+    width: 100%;
+    height: max-content;
+    box-shadow: 0px 0px 20px 1px #000000b0;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.202);
+  }
+  footer .top .linkss {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding: 5px;
+  }
+
+  footer .top .linkss a {
+    width: 100%;
+    height: 25%;
+    /* margin: 5px 0px; */
+    padding: 0px 5px;
+    /* padding: 20px; */
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 25px;
+    background-color: transparent;
+    position: relative;
+    color: #eb8169;
+    /* transition: 1s all ease-in-out; */
+    /* border: 2px solid #eb8169;  */
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  footer .top .linkss a:hover {
+    background-color: #eb8169;
+    color: transparent;
+  }
+
+  footer .top .linkss a i {
+    position: absolute;
+    right: 1.5%;
+
+    font-size: 230%;
+  }
+
+  footer .top .linkss a span {
+    position: absolute;
+    right: 35px;
+    margin: 0 20px;
+    font-size: 150%;
+  }
+
+  footer .top .linkss a:hover i {
+    right: 92%;
+    transition: 0.5s all ease-in-out;
+    color: #fff;
+  }
+
+  footer .top .linkss a:hover span {
+    transition: 0.2s all ease-in-out;
+    color: #fff;
+  }
+
+  footer .top .logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* border: 1px solid red; */
+  }
+  footer .top .logo img {
+    /* width: 100%; */
+    height: 70%;
+    /* border: 1px solid red; */
+  }
+  footer .top .logo .text {
+    width: 100%;
+    /* height: 70%; */
+    /* border: 1px solid red; */
+    text-align: center;
+    color: #eb8169;
+    font-size: 130%;
+    font-weight: 700;
+  }
+
+  footer .top .qrcode_wts {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* border: 1px solid red; */
+  }
+
+  footer .top .qrcode_wts img {
+    /* width: 100%; */
+    height: 70%;
+    /* border: 1px solid red; */
+  }
+  footer .top .qrcode_wts .text {
+    width: 100%;
+    /* height: 70%; */
+    /* border: 1px solid red; */
+    text-align: center;
+    color: #eb8169;
+    font-size: 150%;
+    font-weight: 700;
+  }
+  footer .bottom {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    box-shadow: 0px 0px 20px 1px #000000b0;
+    /* margin: 10px; */
+    /* border-radius: 25px; */
+    background-color: rgba(0, 0, 0, 0.205);
+    padding: 3px 0px;
+  }
+
+  footer .bottom p {
+    color: #eb8169;
+    font-size: 80%;
+    font-weight: 500;
+  }
+  footer .bottom a {
+    color: #eb8169;
+    font-size: 100%;
+    font-weight: 500;
+    padding: 0 5px;
+    text-decoration: underline;
+    letter-spacing: 2px;
+  }
 }
 
 /* 📱 الهواتف الصغيرة جدًا (مثل iPhone SE, Galaxy A10) */
