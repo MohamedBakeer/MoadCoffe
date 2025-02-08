@@ -305,15 +305,13 @@ footer .bottom a {
   } */
 
 /* 🖥️ شاشات اللابتوب العادية (أجهزة متوسطة الحجم) */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 979px) {
 }
+
 
 /* 📱 الهواتف الكبيرة (مثل iPhone 14 Pro Max, Galaxy S22 Ultra) */
-@media (max-width: 767px) {
-}
 
-/* 📱 الهواتف المتوسطة والصغيرة (مثل iPhone 11, Galaxy S20) */
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   header {
     padding: 10px 3.5%;
   }
@@ -522,7 +520,9 @@ footer .bottom a {
 }
 
 /* 📱 الهواتف الصغيرة جدًا (مثل iPhone SE, Galaxy A10) */
-@media (max-width: 400px) {
+/* 📱 الهواتف المتوسطة والصغيرة (مثل iPhone 11, Galaxy S20) */
+
+@media (max-width: 480px) {
   header {
     padding: 10px 3.5%;
   }
