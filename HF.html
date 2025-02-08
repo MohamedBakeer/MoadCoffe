@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="StaticLayout.css" /> -->
+    <link rel="stylesheet" href="HF.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon" />
+    <title>Document</title>
+  </head>
+  <body dir="rtl">
+    <header id="headers">
+      <div class="btn" onclick="menuBar()">
+        <i class="fa-solid fa-caret-down"></i>
+      </div>
+      <div class="nav">
+        <!-- <a href="#">الرئيسية</a>
+            <a href="#">الأصناف</a>
+            <a href="#">الأحداث</a>
+            <a href="#">قصتنا</a>
+            <a href="#">الفروع</a>
+            <a href="#">نواصل معنا</a> -->
+
+        <a href="#">اكتشف عالمنا</a>
+        <a href="#">تشكيلة الأصناف</a>
+        <a href="#">آخر الأحداث</a>
+        <!-- <a href="#">قصتنا الملهمة</a> -->
+        <a href="#">فروعنا حولك</a>
+        <a href="#">تواصل معنا اليوم</a>
+      </div>
+    </header>
+    
+    <main>
+      
+    </main>
+
+    <footer>
+      <div class="top">
+        <div class="linkss">
+          
+            <a href="" onmouseover="changetxt('صفحتنا الرسمية' , 1)" onmouseout="redotxt('بُن مُعاذ' , 1)" ><i class="fa-brands fa-facebook"></i> <span>بُن مُعاذ</span></a>
+            <a href="" onmouseover="changetxt('دير متابعة 🙂' , 2)" onmouseout="redotxt('mouath_coffee' , 2)" ><i class="fa-brands fa-instagram"></i> <span>mouath_coffee</span></a>
+            <a href="" onmouseover="changetxt('كلمنا وتس' , 3)" onmouseout="redotxt('الوتس آب' , 3)" ><i class="fa-brands fa-whatsapp"></i><span>الوتس آب</span> </a>
+            <!-- <a href=""><i class="fa-solid fa-phone"></i> <span>094-2699914</span></a> -->
+            <!-- <a href=""><i class="fa-solid fa-phone"></i> <span>093-1002891</span></a> -->
+          
+        </div>
+        <div class="logo">
+          <img src="image/logo.png" alt="">
+          <div class="text"><span>يُحكَى أَنّ مذاقاً يَحكي</span></div>
+        </div>
+        <div class="qrcode_wts">
+          <img src="image/qr-code-removebg-preview.png" alt="">
+          <div class="text"><span>ملاحظاتك</span></div>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>Created By  <a href="https://www.facebook.com/mohamed.bakeer.1884" target="_blank">MNB</a>| © 2019-<span>2022</span> All rights reserved</p>
+      </div>
+    </footer>
+
+    <script>
+
+      window.addEventListener("resize", () => {
+          console.log(`Width: ${window.innerWidth}px  ,Height: ${window.innerHeight}px `);
+          document.querySelector("footer > .top > .qrcode_wts > .text").innerHTML = `W: ${window.innerWidth} , H: ${window.innerHeight}`;
+      });
+      document.querySelector("footer > .top > .qrcode_wts > .text").innerHTML = `W: ${window.innerWidth} , H: ${window.innerHeight}`;
+      // reload year to 2019 - 20**
+      let year = new Date().getFullYear();
+      document.querySelector("footer > div.bottom > p > span").innerHTML = year;
+
+      function changetxt(newtxt , child) {
+        let txt = document.querySelector(`body > footer > div.top > div.linkss > a:nth-child(${child}) > span`);
+        txt.innerHTML = newtxt;
+      }
+
+      function redotxt(newtxt , child) {
+        let txt = document.querySelector(`body > footer > div.top > div.linkss > a:nth-child(${child}) > span`);
+        txt.innerHTML = newtxt;
+      }
+
+      function menuBar() {
+        if (document.querySelector("Header > .nav").style.right == "1.7%") {
+          document.querySelector("Header > .nav").style.right = "-100%";
+          document.querySelector("header > .btn > i").style.transform =
+            "rotate(-90deg)";
+
+          document.querySelector("header > .btn").style.color = "#EB8169";
+          document.querySelector("header > .btn").style.backgroundColor =
+            "transparent";
+        } else {
+          document.querySelector("Header > .nav").style.right = "1.7%";
+          document.querySelector("header > .btn > i").style.transform =
+            "rotate(0deg)";
+
+          document.querySelector("header > .btn").style.color = "#fff";
+          document.querySelector("header > .btn").style.backgroundColor =
+            "#EB8169";
+        }
+      }
+
+      if (document.querySelector(".home_page")) {
+        var video_intro = document.querySelector("#video_intro");
+
+        function play_intro() {
+          video_intro.play();
+          video_intro.loop = true;
+          
+        }
+        
+      }
+
+      let i = 0;
+
+      // window.addEventListener("scroll", () => {
+      //   console.log(window.scrollY);
+      //   document.querySelector("footer > .top > .qrcode_wts > .text").innerHTML = `Width: ${window.innerWidth}px  ,Height: ${window.innerHeight}px ${window.scrollY}`;
+      //   if (window.scrollY >= 150) {
+      //     document.querySelector(".home_page .about_us").style.opacity = 1;
+      //   } else {
+      //     document.querySelector(".home_page .about_us").style.opacity = 0;
+      //   }
+
+      //   if (window.scrollY >= 1150) {
+      //     document.querySelector(".home_page .cardofBean").style.opacity = 1;
+      //   } else {
+      //     document.querySelector(".home_page .cardofBean").style.opacity = 0;
+      //   }
+      // });
+
+      window.addEventListener("scroll", () => {
+        console.log(window.scrollY);
+        if (window.scrollY >= 300) {
+          document.querySelector("#headers").style.opacity = 0;
+          document.querySelector("#headers").style.zIndex = 0;
+        } else {
+          document.querySelector("#headers").style.opacity = 1;
+          document.querySelector("#headers").style.zIndex = 1000;
+        }
+      });
+
+//       if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+//     document.body.style.fontFamily = "'Arial', sans-serif"; // خط بديل لأجهزة iPhone
+// } else {
+//     document.body.style.fontFamily = "Cairo"; // الخط الافتراضي لباقي الأجهزة
+// }
+      
+    </script>
+  </body>
+</html>

@@ -56,7 +56,7 @@
         </section>
 
         <section class="about_us">
-          <!-- <div class="head_text"><h1>قصـتنا الملهمة</h1></div> -->
+          
 
           <div class="image">
             <img src="image/Photo_face/this.jpg" alt="" />
@@ -83,23 +83,6 @@
         <section class="cardofBean">
           <h1>الخلطات الرئيسية</h1>
           <div class="cards">
-              <!-- <marquee behavior="" direction="" loop="1000" scrollamount="25">
-                <h1>11111111111111111111111111111111111111</h1>
-                <h1>22222222222222222222222222222222222222</h1>
-              </marquee> -->
-
-            <!-- <div class="card">
-              <div class="title"><h1>سانتوس</h1></div>
-              <div class="detiles_bean">
-                <div class="the_taste">
-                  <h1>الطعم : <strong>متوسط</strong></h1>
-                </div>
-                <div class="the_color">
-                  <h1>اللون : <strong>متوسط</strong></h1>
-                </div>
-              </div>
-            </div> -->
-
             <div class="card">
               <div class="card-header">
                 <h1 class="card-title">سانتوس</h1>
@@ -243,10 +226,6 @@
                     <h2>الطعم: <strong>مركز</strong></h2>
                     <p>إسبريسو هو الخيار المثالي لمن يفضلون طعمًا قويًا ومركزًا، حيث يُعتمد على مهارة الباريستا لإنتاجه بأفضل شكل ممكن.</p>
                   </div>
-                  <!-- <div class="color">
-                    <h2>اللون: <strong>داكن</strong></h2>
-                    <p>اللون الداكن والمكثف يعكس قوة الطعم التي توفرها إسبريسو، وهي قهوة مصممة لتناسب آلية تحضير معينة.</p>
-                  </div> -->
                 </div>
               </div>
             </div>
@@ -284,6 +263,12 @@
     </footer>
 
     <script>
+
+      window.addEventListener("resize", () => {
+          console.log(`Width: ${window.innerWidth}px  ,Height: ${window.innerHeight}px `);
+          
+      });
+      document.querySelector("footer > .top > .qrcode_wts > .text").innerHTML = `W: ${window.innerWidth} , H: ${window.innerHeight}`;
       // reload year to 2019 - 20**
       let year = new Date().getFullYear();
       document.querySelector("footer > div.bottom > p > span").innerHTML = year;
@@ -324,31 +309,15 @@
         function play_intro() {
           video_intro.play();
           video_intro.loop = true;
-          // console.log('loper = ');
+          
         }
-        // setInterval(play_intro(), 100);
+        
       }
 
       let i = 0;
-      // setInterval(() => {
-
-      //   if (i <= 0) {
-      //     i=i-1;
-      //   }
-
-      //   console.log(i);
-      //   // document.querySelector('.home_page .about_us .slider > div .image img').style.objectPosition = `${i}px 0px`;
-      //   document.querySelector('.home_page .about_us .slider > div .image img').style.objectPosition = `0px ${i}px`;
-      //   console.log(document.querySelector('.home_page .about_us .slider > div .image img').style.objectPosition);
-      // }, 10);
 
       window.addEventListener("scroll", () => {
-        // if (window.pageYOffset > 100) {
-        //     totop.classList.add("active")
-        // }else{
-        //     totop.classList.remove("active")
-        // }
-        console.log(window.scrollY);
+        // console.log(window.scrollY);
         if (window.scrollY >= 150) {
           document.querySelector(".home_page .about_us").style.opacity = 1;
         } else {

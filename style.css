@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@-11..11,200..1000&display=swap');
+
 /* ------------------Genrall Setting */
 * {
   margin: 0;
@@ -5,11 +8,10 @@
   box-sizing: border-box;
   text-decoration: none;
   text-transform: capitalize;
-  font-family: "LBC";
   font-style: normal;
   transition: 0.3s all;
   scroll-behavior: smooth;
-  font-family: "Cairo", sans-serif;
+  font-family: "Cairo";
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -1162,4 +1164,6 @@ footer .bottom a {
     letter-spacing: 2px;
   }
 }
+
+
 
