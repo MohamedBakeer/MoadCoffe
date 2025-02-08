@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@-11..11,200..1000&display=swap");
+
+/* ------------------Genrall Setting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-style: normal;
+  transition: 0.3s all;
+  scroll-behavior: smooth;
+  font-family: "Cairo";
+  font-style: normal;
+
+  font-optical-sizing: auto;
+}
+
+@supports (-webkit-touch-callout: none) {
+  * {
+    font-family: "Arial", sans-serif; /* خط بديل لأجهزة iPhone */
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* height: 110vh; */
+  align-items: center;
+
+  background: url(image/imgbin_coffee-bean-cafe-png.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-color: #332f2e;
+  background-attachment: fixed;
+  background-size: 25%;
+}
+::-webkit-scrollbar {
+  display: none;
+}

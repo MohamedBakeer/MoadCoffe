@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="StaticLayout.css" /> -->
+    
+    <link rel="stylesheet" href="defaultSetting.css">
     <link rel="stylesheet" href="HF.css" />
+     <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -12,6 +14,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+      <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="CSS/swiper.css">
     
     <link rel="shortcut icon" href="image/logo.png" type="image/x-icon" />
     <title>Document</title>
@@ -39,7 +45,362 @@
     </header>
     
     <main>
-      
+      <div class="home_page">
+        <section class="flow_video">
+          <div class="background">
+            <video
+              id="video_intro"
+              src="video/videoplayback.mp4"
+              autoplay
+              loop
+            ></video>
+          </div>
+          <div class="flow" onclick="play_intro()">
+            <img src="image/logo.png" alt="" />
+            <h1>يُحكَى أَنّ مذاقاً يَحكي</h1>
+          </div>
+        </section>
+
+        <section class="about_us">
+          
+
+          <div class="image">
+            <img src="image/Photo_face/this.jpg" alt="" />
+          </div>
+          <div class="text">
+            <h1>قصـتنا الملهمة</h1>
+            <span>
+              تأسس مطحن "بن معاذ" في 18 ديسمبر 2019، بمدينة الزاوية في ليبيا،
+              بهدف تأسيس مستوى تنافسي جديد في صناعة القهوة المحلية.
+            </span>
+
+            <span>
+              ومن منطلق حرصنا على الارتقاء بهذه الصناعة، كان لا بد من اختيار
+              الأجود في كل خطوة؛ بداية من حبات البن وصولاً إلى التغليف.
+            </span>
+
+            <span>
+              ونظرًا لثقتنا في جودة منتجاتنا، أصبح المذاق هو من يتحدث عن تميزنا،
+              ليكون شعارنا: "يحكى أن مذاقًا يحكي".
+            </span>
+          </div>
+        </section>
+
+        <section class="cardofBeanSwiper">
+          <div class="side1">
+            <h1>الخلطات الرئيسية</h1>
+          </div>
+          <div class="side2">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                      <div class="card-header">
+                        <h1 class="card-title">سانتوس</h1>
+                      </div>
+                      <div class="card-body">
+                        <div class="card-details">
+                          <div class="taste">
+                            <h2>الطعم: <strong>متوسط</strong></h2>
+                            <p>تمتع بتجربة طعم متوازن مع نكهة غنية توفر لك تجربة قهوة فريدة.</p>
+                          </div>
+                          <div class="color">
+                            <h2>اللون: <strong>متوسط</strong></h2>
+                            <p>لون قهوتنا يجسد التوازن المثالي بين القوة و الخفة.</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-header">
+                    <h1 class="card-title">معاذ</h1>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-details">
+                      <div class="taste">
+                        <h2>الطعم: <strong>قوي</strong></h2>
+                        <p>تمتع بتجربة طعم قوي وغني يناسب عشاق القهوة الجريئة.</p>
+                      </div>
+                      <div class="color">
+                        <h2>اللون: <strong>داكن</strong></h2>
+                        <p>لون قهوتنا الداكن قد يظنه البعض محروقًا، لكنه يعكس القوة والمذاق العميق.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-header">
+                    <h1 class="card-title">موكا</h1>
+                  </div>
+    
+                  <div class="card-body">
+                    <div class="card-details">
+                      <div class="taste">
+                        <h2>الطعم: <strong>قوي</strong></h2>
+                        <p>تمتع بتجربة طعم قوي وغني، مع نكهة مميزة تميزها عن باقي أنواع القهوة.</p>
+                      </div>
+                      <div class="color">
+                        <h2>اللون: <strong>متوسط</strong></h2>
+                        <p>لون قهوتنا المعتدل يجعلها البديل المثالي للقهوة الداكنة.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-header">
+                    <h1 class="card-title">كولومبيا</h1>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-details">
+                      <div class="taste">
+                        <h2>الطعم: <strong>قوي مع حموضة</strong></h2>
+                        <p>تمتع بتجربة طعم قوي مع حموضة مميزة، يجذب عشاق القهوة الجريئة والغير تقليدية.</p>
+                      </div>
+                      <div class="color">
+                        <h2>اللون: <strong>متوسط</strong></h2>
+                        <p>لون قهوتنا المتوسط يضيف لمسة من النعومة التي توازن قوتها، لكن قوتها تجعلها خيارًا غير شائع للكثيرين.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-header">
+                    <h1 class="card-title">إسبيشال</h1>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-details">
+                      <div class="taste">
+                        <h2>الطعم: <strong>متوسط</strong></h2>
+                        <p>طعم متوسط مع لمسة خفيفة من القوة والحموضة، خيار مثالي لمن يحبون القهوة الأقل قوة من كولومبيا.</p>
+                      </div>
+                      <div class="color">
+                        <h2>اللون: <strong>متوسط</strong></h2>
+                        <p>لون متوسط يوازن بين النعومة والعمق، مثالي لمن يفضلون القهوة المتوازنة.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-header">
+                    <h1 class="card-title">ريو</h1>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-details">
+                      <div class="taste">
+                        <h2>الطعم: <strong>خفيف</strong></h2>
+                        <p>استمتع بتجربة قهوة خفيفة، تقدم لك طعمًا لطيفًا وسلسًا، مثالية لمن يفضلون القهوة ذات المذاق المعتدل.</p>
+                      </div>
+                      <div class="color">
+                        <h2>اللون: <strong>فاتح</strong></h2>
+                        <p>لون قهوتنا الفاتح يضفي شعورًا بالانتعاش والنعومة، ليمنحك تجربة قهوة مريحة وسهلة الشرب.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-header">
+                    <h1 class="card-title">الشام</h1>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-details">
+                      <div class="taste">
+                        <h2>الطعم: <strong>متوسط</strong></h2>
+                        <p>الشام تتميز بنكهة متوازنة تجمع بين القوة والنعومة، مثالية لمن يبحثون عن طعم غني ولكن ليس قوياً.</p>
+                      </div>
+                      <div class="color">
+                        <h2>اللون: <strong>داكن</strong></h2>
+                        <p>لون قهوتنا الداكن يعكس عمق نكهتها الفريدة، مما يجعلها خيارًا مميزًا لأولئك الذين يفضلون القهوة ذات اللون القوي.</p>                  </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-header">
+                    <h1 class="card-title">إسبريسو</h1>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-details">
+                      <div class="taste">
+                        <h2>الطعم: <strong>مركز</strong></h2>
+                        <p>إسبريسو هو الخيار المثالي لمن يفضلون طعمًا قويًا ومركزًا، حيث يُعتمد على مهارة الباريستا لإنتاجه بأفضل شكل ممكن.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+              
+        </section>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            pagination: {
+              el: ".swiper-pagination",
+              type: "progressbar",
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>
+
+        <!-- <section class="cardofBean">
+          <h1>الخلطات الرئيسية</h1>
+          <div class="cards">
+            <div class="card">
+              <div class="card-header">
+                <h1 class="card-title">سانتوس</h1>
+              </div>
+              <div class="card-body">
+                <div class="card-details">
+                  <div class="taste">
+                    <h2>الطعم: <strong>متوسط</strong></h2>
+                    <p>تمتع بتجربة طعم متوازن مع نكهة غنية توفر لك تجربة قهوة فريدة.</p>
+                  </div>
+                  <div class="color">
+                    <h2>اللون: <strong>متوسط</strong></h2>
+                    <p>لون قهوتنا يجسد التوازن المثالي بين القوة و الخفة.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h1 class="card-title">معاذ</h1>
+              </div>
+              <div class="card-body">
+                <div class="card-details">
+                  <div class="taste">
+                    <h2>الطعم: <strong>قوي</strong></h2>
+                    <p>تمتع بتجربة طعم قوي وغني يناسب عشاق القهوة الجريئة.</p>
+                  </div>
+                  <div class="color">
+                    <h2>اللون: <strong>داكن</strong></h2>
+                    <p>لون قهوتنا الداكن قد يظنه البعض محروقًا، لكنه يعكس القوة والمذاق العميق.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card">
+
+              <div class="card-header">
+                <h1 class="card-title">موكا</h1>
+              </div>
+
+              <div class="card-body">
+                <div class="card-details">
+                  <div class="taste">
+                    <h2>الطعم: <strong>قوي</strong></h2>
+                    <p>تمتع بتجربة طعم قوي وغني، مع نكهة مميزة تميزها عن باقي أنواع القهوة.</p>
+                  </div>
+                  <div class="color">
+                    <h2>اللون: <strong>متوسط</strong></h2>
+                    <p>لون قهوتنا المعتدل يجعلها البديل المثالي للقهوة الداكنة.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="card">
+              <div class="card-header">
+                <h1 class="card-title">كولومبيا</h1>
+              </div>
+              <div class="card-body">
+                <div class="card-details">
+                  <div class="taste">
+                    <h2>الطعم: <strong>قوي مع حموضة</strong></h2>
+                    <p>تمتع بتجربة طعم قوي مع حموضة مميزة، يجذب عشاق القهوة الجريئة والغير تقليدية.</p>
+                  </div>
+                  <div class="color">
+                    <h2>اللون: <strong>متوسط</strong></h2>
+                    <p>لون قهوتنا المتوسط يضيف لمسة من النعومة التي توازن قوتها، لكن قوتها تجعلها خيارًا غير شائع للكثيرين.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h1 class="card-title">إسبيشال</h1>
+              </div>
+              <div class="card-body">
+                <div class="card-details">
+                  <div class="taste">
+                    <h2>الطعم: <strong>متوسط</strong></h2>
+                    <p>طعم متوسط مع لمسة خفيفة من القوة والحموضة، خيار مثالي لمن يحبون القهوة الأقل قوة من كولومبيا.</p>
+                  </div>
+                  <div class="color">
+                    <h2>اللون: <strong>متوسط</strong></h2>
+                    <p>لون متوسط يوازن بين النعومة والعمق، مثالي لمن يفضلون القهوة المتوازنة.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-header">
+                <h1 class="card-title">ريو</h1>
+              </div>
+              <div class="card-body">
+                <div class="card-details">
+                  <div class="taste">
+                    <h2>الطعم: <strong>خفيف</strong></h2>
+                    <p>استمتع بتجربة قهوة خفيفة، تقدم لك طعمًا لطيفًا وسلسًا، مثالية لمن يفضلون القهوة ذات المذاق المعتدل.</p>
+                  </div>
+                  <div class="color">
+                    <h2>اللون: <strong>فاتح</strong></h2>
+                    <p>لون قهوتنا الفاتح يضفي شعورًا بالانتعاش والنعومة، ليمنحك تجربة قهوة مريحة وسهلة الشرب.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-header">
+                <h1 class="card-title">الشام</h1>
+              </div>
+              <div class="card-body">
+                <div class="card-details">
+                  <div class="taste">
+                    <h2>الطعم: <strong>متوسط</strong></h2>
+                    <p>الشام تتميز بنكهة متوازنة تجمع بين القوة والنعومة، مثالية لمن يبحثون عن طعم غني ولكن ليس قوياً.</p>
+                  </div>
+                  <div class="color">
+                    <h2>اللون: <strong>داكن</strong></h2>
+                    <p>لون قهوتنا الداكن يعكس عمق نكهتها الفريدة، مما يجعلها خيارًا مميزًا لأولئك الذين يفضلون القهوة ذات اللون القوي.</p>                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-header">
+                <h1 class="card-title">إسبريسو</h1>
+              </div>
+              <div class="card-body">
+                <div class="card-details">
+                  <div class="taste">
+                    <h2>الطعم: <strong>مركز</strong></h2>
+                    <p>إسبريسو هو الخيار المثالي لمن يفضلون طعمًا قويًا ومركزًا، حيث يُعتمد على مهارة الباريستا لإنتاجه بأفضل شكل ممكن.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            
+          </div>
+        </section> -->
+
+      </div>
     </main>
 
     <footer>
@@ -70,10 +431,11 @@
     <script>
 
       window.addEventListener("resize", () => {
-          console.log(`Width: ${window.innerWidth}px  ,Height: ${window.innerHeight}px `);
-          document.querySelector("footer > .top > .qrcode_wts > .text").innerHTML = `W: ${window.innerWidth} , H: ${window.innerHeight}`;
+          // console.log(`Width: ${window.innerWidth}px  ,Height: ${window.innerHeight}px `);
+          // document.querySelector("footer > .top > .qrcode_wts > .text").innerHTML = `W: ${window.innerWidth} , H: ${window.innerHeight}`;
       });
-      document.querySelector("footer > .top > .qrcode_wts > .text").innerHTML = `W: ${window.innerWidth} , H: ${window.innerHeight}`;
+      // document.querySelector("footer > .top > .qrcode_wts > .text").innerHTML = `W: ${window.innerWidth} , H: ${window.innerHeight}`;
+      
       // reload year to 2019 - 20**
       let year = new Date().getFullYear();
       document.querySelector("footer > div.bottom > p > span").innerHTML = year;
@@ -121,25 +483,30 @@
 
       let i = 0;
 
-      // window.addEventListener("scroll", () => {
-      //   console.log(window.scrollY);
-      //   document.querySelector("footer > .top > .qrcode_wts > .text").innerHTML = `Width: ${window.innerWidth}px  ,Height: ${window.innerHeight}px ${window.scrollY}`;
-      //   if (window.scrollY >= 150) {
-      //     document.querySelector(".home_page .about_us").style.opacity = 1;
-      //   } else {
-      //     document.querySelector(".home_page .about_us").style.opacity = 0;
-      //   }
+      window.addEventListener("scroll", () => {
+        console.log(window.scrollY);
+        if (window.scrollY >= 150) {
+          document.querySelector(".home_page .about_us").style.opacity = 1;
+        } else {
+          document.querySelector(".home_page .about_us").style.opacity = 0;
+        }
 
-      //   if (window.scrollY >= 1150) {
-      //     document.querySelector(".home_page .cardofBean").style.opacity = 1;
-      //   } else {
-      //     document.querySelector(".home_page .cardofBean").style.opacity = 0;
-      //   }
-      // });
+        // if (window.scrollY >= 1150) {
+        //   document.querySelector(".home_page .cardofBean").style.opacity = 1;
+        // } else {
+        //   document.querySelector(".home_page .cardofBean").style.opacity = 0;
+        // }
+
+        if (window.scrollY >= 1150) {
+          document.querySelector(".home_page .cardofBeanSwiper").style.opacity = 1;
+        } else {
+          document.querySelector(".home_page .cardofBeanSwiper").style.opacity = 0;
+        }
+      });
 
       window.addEventListener("scroll", () => {
         console.log(window.scrollY);
-        if (window.scrollY >= 300) {
+        if (window.scrollY >= 250) {
           document.querySelector("#headers").style.opacity = 0;
           document.querySelector("#headers").style.zIndex = 0;
         } else {
