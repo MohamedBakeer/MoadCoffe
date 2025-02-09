@@ -39,3 +39,14 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+/* إخفاء شريط التمرير في Chrome, Safari, Opera */
+:root::-webkit-scrollbar {
+  display: none;
+}
+
+/* إخفاء شريط التمرير في Edge و Internet Explorer */
+:root , * {
+  -ms-overflow-style: none;  /* IE و Edge */
+  scrollbar-width: none;  /* Firefox */
+}

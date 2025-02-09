@@ -360,16 +360,16 @@ main .home_page {
     padding: 0% 5%;
   }
 
-  .swiper {
+  .home_page .cardofBeanSwiper .side2 > .swiper {
     width: 100%;
     height: 100%;
   }
-  
-  .swiper-slide {
+
+  .home_page .cardofBeanSwiper .side2 > .swiper-slide {
     text-align: center;
     background-color: #e9e9e9;
     border-radius: 15px;
-    width:  100%;
+    width: 100%;
     height: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -407,7 +407,6 @@ main .home_page {
     /* padding: 10px; */
     text-align: center;
   }
-
 
   .card-details {
     margin-bottom: 0px;
