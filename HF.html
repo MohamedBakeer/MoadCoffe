@@ -45,7 +45,7 @@
     </header>
     
     <main>
-      <div class="home_page">
+      <div class="home_page" >
         <section class="flow_video">
           <div class="background">
             <video
@@ -61,7 +61,7 @@
           </div>
         </section>
 
-        <section class="about_us">
+        <section class="about_us" >
           
 
           <div class="image">
@@ -91,7 +91,7 @@
             <h1>الخلطات الرئيسية</h1>
           </div>
           <div class="side2">
-            <!-- Swiper -->
+            
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -250,9 +250,10 @@
           });
         </script>
 
-        <!-- <section class="cardofBean">
+        <section class="cardofBean">
           <h1>الخلطات الرئيسية</h1>
           <div class="cards">
+
             <div class="card">
               <div class="card-header">
                 <h1 class="card-title">سانتوس</h1>
@@ -398,7 +399,7 @@
             
             
           </div>
-        </section> -->
+        </section>
 
       </div>
     </main>
@@ -472,7 +473,7 @@
 
       if (document.querySelector(".home_page")) {
         var video_intro = document.querySelector("#video_intro");
-
+        console.log("h1");
         function play_intro() {
           video_intro.play();
           video_intro.loop = true;
@@ -484,18 +485,18 @@
       let i = 0;
 
       window.addEventListener("scroll", () => {
-        console.log(window.scrollY);
+        // console.log(window.scrollY);
         if (window.scrollY >= 150) {
           document.querySelector(".home_page .about_us").style.opacity = 1;
         } else {
           document.querySelector(".home_page .about_us").style.opacity = 0;
         }
 
-        // if (window.scrollY >= 1150) {
-        //   document.querySelector(".home_page .cardofBean").style.opacity = 1;
-        // } else {
-        //   document.querySelector(".home_page .cardofBean").style.opacity = 0;
-        // }
+        if (window.scrollY >= 1150) {
+          document.querySelector(".home_page .cardofBean").style.opacity = 1;
+        } else {
+          document.querySelector(".home_page .cardofBean").style.opacity = 0;
+        }
 
         if (window.scrollY >= 1150) {
           document.querySelector(".home_page .cardofBeanSwiper").style.opacity = 1;
