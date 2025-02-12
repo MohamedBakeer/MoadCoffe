@@ -241,6 +241,7 @@ main .menuCoffee > .menuContiner > div > div > p:hover {
   main .menuCoffee {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url(/image/6023799896336876399_121.jpg);
+    background: transparent;
     background-size: 200%;
     padding:  4.5rem 1rem;
   }
@@ -280,6 +281,7 @@ main .menuCoffee > .menuContiner > div > div > p:hover {
   main .menuCoffee {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url(/image/6023799896336876399_121.jpg);
+    background: transparent;
     background-size: 500%;
     padding:  4.5rem 1rem;
   }
