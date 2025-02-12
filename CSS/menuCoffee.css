@@ -193,6 +193,24 @@ main .menuCoffee > .menuContiner > div > div > p:hover {
 }
 
 @media (max-width: 1551px) {
+  main .menuCoffee {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(/image/6023799896336876399_121.jpg);
+    background-size: 200%;
+    padding:  4.5rem 1rem;
+  }
+
+  main .menuCoffee > h1 {
+    font-size: 2rem;
+    margin:  0px;
+  }
+
+  main .menuCoffee > span {
+    font-size: 2rem;
+    margin:  0px;
+  }
+
+  
   main .menuCoffee > .menuContiner {
     width: 100%;
     height: 100%;
@@ -204,13 +222,39 @@ main .menuCoffee > .menuContiner > div > div > p:hover {
     justify-content: space-evenly;
     align-items: center;
   }
+
+  
+  main .menuCoffee > .menuContiner > div {
+    margin: 10px;
+  }
+
+  main .menuCoffee > .menuContiner > div > h1 {
+    font-size: 1.7rem;
+  }
+
+  main .menuCoffee > .menuContiner > div > div > p {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 1000px) {
+  main .menuCoffee {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(/image/6023799896336876399_121.jpg);
+    background-size: 200%;
+    padding:  4.5rem 1rem;
+  }
+
+  main .menuCoffee > h1 {
+    font-size: 1.7rem;
+    margin:  0px;
+  }
+
+  main .menuCoffee > span {
+    font-size: 1.7rem;
+    margin:  0px;
+  }
   main .menuCoffee > .menuContiner {
-    width: 100%;
-    height: 100%;
-    /* border: green 1px solid; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 100%);
@@ -222,17 +266,21 @@ main .menuCoffee > .menuContiner > div > div > p:hover {
   main .menuCoffee > .menuContiner > div {
     margin: 10px;
   }
+
+  main .menuCoffee > .menuContiner > div > h1 {
+    font-size: 1.3rem;
+  }
+
+  main .menuCoffee > .menuContiner > div > div > p {
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 850px) {
   main .menuCoffee {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url(/image/6023799896336876399_121.jpg);
-  background-position: center;
-  background-repeat: repeat;
-  background-color: #332f2e;
-  background-attachment: fixed;
-  background-size: 500%;
+    background-size: 500%;
     padding:  4.5rem 1rem;
   }
 
@@ -247,8 +295,6 @@ main .menuCoffee > .menuContiner > div > div > p:hover {
   }
 
   main .menuCoffee > .menuContiner {
-    width: 100%;
-    height: 100%;
     /* border: green 1px solid; */
     display: grid;
     grid-template-columns: repeat(1, 100%);
@@ -263,36 +309,10 @@ main .menuCoffee > .menuContiner > div > div > p:hover {
   }
 
   main .menuCoffee > .menuContiner > div > h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid fuchsia; */
-    width: 100%;
-    height: 15%;
-    border-radius: 20px;
-    text-align: center;
-    width: 100%;
     font-size: 1.3rem;
-    font-weight: 700;
-    /* filter: drop-shadow(0px 0px 12px #eb8169); */
-    color: #fff;
-    transition: 0.5s all;
-    cursor: default;
-    background-color: #eb8169;
   }
 
   main .menuCoffee > .menuContiner > div > div > p {
-    /* border: 1px solid fuchsia; */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    font-size: 1rem;
-    font-weight: 700;
-    background-color: #eb8169;
-    color: #fff;
-    /* height: 100%; */
-    transform: scale(0.9);
+    font-size: 1.1rem;
   }
 }
