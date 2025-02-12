@@ -365,8 +365,13 @@ main .home_page {
     height: 100%;
     /* border: 1px solid red; */
   }
-
+  
   .home_page .cardofBeanSwiper .side2 > .swiper .swiper-slide {
+    /* border: 1px solid red; */
+    padding: 10px;
+  }
+
+  .home_page .cardofBeanSwiper .side2 > .swiper .cardtemplate{
     text-align: center;
     background-color: #e9e9e9;
     border-radius: 15px;
@@ -382,6 +387,7 @@ main .home_page {
     justify-content: center;
     align-items: center;
     /* border: 1px solid blue; */
+
   }
 
   .card-header {
