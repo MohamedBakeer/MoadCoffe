@@ -6,13 +6,14 @@ main .menuCoffee {
   justify-content: center;
   align-items: center;
   /* border: 1px solid red; */
-  background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)) ,url(/image/6023799896336876399_121.jpg) ;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(/image/6023799896336876399_121.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-color: #332f2e;
   background-attachment: fixed;
   background-size: 100%;
-  box-shadow: 0 20px 15px 0px rgba(0,0,0,0.8);
+  box-shadow: 0 20px 15px 0px rgba(0, 0, 0, 0.8);
   padding: 4.5rem;
 }
 
@@ -115,30 +116,29 @@ main .menuCoffee > .menuContiner > div {
 }
 
 @keyframes menuContiner {
-    0% {
-      /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
-      transform: translatey(0px);
-      /* transform: scale(0.8); */
-      /* filter: drop-shadow(0px 0px 10px rgb(235, 129, 105)); */
-    }
-    50% {
-      /* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2); */
-      transform: translatey(-10px);
-      /* transform: scale(0.8); */
-      /* filter: drop-shadow(0px 0px 5px rgb(235, 129, 105)); */
-    }
-    100% {
-      /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
-      transform: translatey(0px);
-      /* transform: scale(0.8); */
-      /* filter: drop-shadow(0px 0px 10px rgb(235, 129, 105)); */
-    }
+  0% {
+    /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+    transform: translatey(0px);
+    /* transform: scale(0.8); */
+    /* filter: drop-shadow(0px 0px 10px rgb(235, 129, 105)); */
   }
+  50% {
+    /* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2); */
+    transform: translatey(-10px);
+    /* transform: scale(0.8); */
+    /* filter: drop-shadow(0px 0px 5px rgb(235, 129, 105)); */
+  }
+  100% {
+    /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+    transform: translatey(0px);
+    /* transform: scale(0.8); */
+    /* filter: drop-shadow(0px 0px 10px rgb(235, 129, 105)); */
+  }
+}
 
 /* main .menuCoffee > .menuContiner > div:hover{
     transform: scale(1);
 } */
-
 
 main .menuCoffee > .menuContiner > div > h1 {
   display: flex;
@@ -147,7 +147,7 @@ main .menuCoffee > .menuContiner > div > h1 {
   /* border: 1px solid fuchsia; */
   width: 100%;
   height: 15%;
-    border-radius: 20px;
+  border-radius: 20px;
   text-align: center;
   width: 100%;
   font-size: 2.1rem;
@@ -188,11 +188,9 @@ main .menuCoffee > .menuContiner > div > div > p {
   transform: scale(0.9);
 }
 
-
-main .menuCoffee > .menuContiner > div > div > p:hover{
-    transform: scale(1);
+main .menuCoffee > .menuContiner > div > div > p:hover {
+  transform: scale(1);
 }
-
 
 @media (max-width: 1551px) {
   main .menuCoffee > .menuContiner {
@@ -206,45 +204,88 @@ main .menuCoffee > .menuContiner > div > div > p:hover{
     justify-content: space-evenly;
     align-items: center;
   }
-
-  
 }
-
 
 @media (max-width: 1000px) {
   main .menuCoffee > .menuContiner {
     width: 100%;
     height: 100%;
-    border: green 1px solid;
+    /* border: green 1px solid; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 100%);
     overflow: scroll;
     justify-content: space-evenly;
     align-items: center;
-    
   }
 
   main .menuCoffee > .menuContiner > div {
     margin: 10px;
-    }
+  }
 }
 
 @media (max-width: 850px) {
+  main .menuCoffee {
+    padding: 2.5rem;
+  }
+
+  main .menuCoffee > h1 {
+    font-size: 1.25rem;
+    margin:  0px;
+  }
+
+  main .menuCoffee > span {
+    font-size: 1rem;
+    margin:  0px;
+  }
+
   main .menuCoffee > .menuContiner {
     width: 100%;
     height: 100%;
-    border: green 1px solid;
+    /* border: green 1px solid; */
     display: grid;
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(3, 100%);
     overflow: scroll;
     justify-content: space-evenly;
     align-items: center;
-    
   }
 
   main .menuCoffee > .menuContiner > div {
-    margin: 50px;
-    }
+    margin: 0px;
+  }
+
+  main .menuCoffee > .menuContiner > div > h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid fuchsia; */
+    width: 100%;
+    height: 15%;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    /* filter: drop-shadow(0px 0px 12px #eb8169); */
+    color: #fff;
+    transition: 0.5s all;
+    cursor: default;
+    background-color: #eb8169;
+  }
+
+  main .menuCoffee > .menuContiner > div > div > p {
+    /* border: 1px solid fuchsia; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #eb8169;
+    color: #fff;
+    /* height: 100%; */
+    transform: scale(0.9);
+  }
 }
