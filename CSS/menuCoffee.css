@@ -226,7 +226,14 @@ main .menuCoffee > .menuContiner > div > div > p:hover {
 
 @media (max-width: 850px) {
   main .menuCoffee {
-    padding: 2.5rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(/image/6023799896336876399_121.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #332f2e;
+  background-attachment: fixed;
+  background-size: 300%;
+    padding:  4.5rem 1rem;
   }
 
   main .menuCoffee > h1 {
